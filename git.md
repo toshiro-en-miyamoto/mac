@@ -23,3 +23,30 @@
 * commit .gitignore and README.md
 * push the commit to the remote
   * $ git push -u origin master (OR using IDE such as VScode)
+# Reviewing Your Changes
+* checking the status
+  * $ git status
+  * shows changes not staged for commit
+  * shows untacked files
+* reviewing your changes
+  * $ git diff {<file>}
+  * shows changes in tracked files
+* reviewing commit history
+  * $ git log
+  * $ git log --oneline
+  * shows the commits that youo've made so far with each hash
+  * $ git show <hash>
+  * shows information about the commit identified by a commit hash
+  * shows changes in the commit
+# Correcting Errors While Working with Git
+* undo changes
+  * $ git checkout <file>
+  * reverts the file back to the state during the last commit
+* undo git add
+  * $ git restore --staged <file>
+  * unstages the file
+* undo git commit
+  * $ git reset --soft HEAD~1
+  * goes back one commit from the last commit
+  * $ git commit --amend -m "New Message"
+  * changes the commit message of the last commit
