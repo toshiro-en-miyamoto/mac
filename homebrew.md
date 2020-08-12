@@ -6,4 +6,7 @@
 - `$ brew install git`
 - `$ brew install node@12`
   - `$ brew link node@12 --force-`
-- `$ brew cask install mongodb-compass`
+- installing MongoDB tools
+  - `$ brew cask install mongodb-compass`
+  - `$ brew tap mongodb/brew`
+  - `$ brew install mongodb-community-shell`
