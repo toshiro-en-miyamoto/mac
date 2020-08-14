@@ -5,8 +5,12 @@
 - `$ brew cask install atom`
 - `$ brew install git`
 - `$ brew install node@12`
-  - `$ brew link node@12 --force-`
+  - `$ brew link --force node@12`
 - installing MongoDB tools
   - `$ brew cask install mongodb-compass`
   - `$ brew tap mongodb/brew`
   - `$ brew install mongodb-community-shell`
+- installing PostgreSQL tools
+  - `$ brew cask install pgadmin4`
+  - `$ brew install libpq`
+  - `$ brew link --force libpq`
