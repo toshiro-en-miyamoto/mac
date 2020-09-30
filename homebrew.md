@@ -3,6 +3,7 @@
 - install Homebrew
 # Installing Formulae
 - `$ brew cask install atom`
+- `$ brew cask install webtorrent`
 - `$ brew install git`
 - `$ brew install node@12`
   - `$ brew link --force node@12`
