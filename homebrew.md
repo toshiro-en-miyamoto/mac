@@ -1,5 +1,5 @@
 # Installing Homebrew
-- install Apple Command Line Tools 11.5 (a prerequisit)
+- install Apple Command Line Tools (a prerequisit)
 - install Homebrew
 # Installing Formulae
 - `$ brew cask install atom`
@@ -16,3 +16,6 @@
   - `$ brew cask install pgadmin4`
   - `$ brew install libpq`
   - `$ brew link --force libpq`
+- installing OpenJDK
+  - `$ brew install openjdk`
+  - `sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk`
