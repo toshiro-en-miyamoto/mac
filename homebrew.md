@@ -18,4 +18,12 @@
   - `$ brew link --force libpq`
 - installing OpenJDK
   - `$ brew install openjdk`
-  - `sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk`
+  - `$ sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk`
+- installing Gnu Compiler Collection
+  - make sure that Apple Command Line Tools is installed
+  - `$ brew install gcc`
+  - `$ c++-10 -std=c++20`
+  - VSCode `c_cpp_properties.json`: "configurations"
+    - "compilerPath": "/usr/local/bin/c++-10"
+    - "cppStandard": "c++20"
+    - "intelliSenseMode": "gcc-x64"
