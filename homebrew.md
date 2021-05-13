@@ -24,6 +24,6 @@
   - `$ brew install gcc`
   - `$ c++-10 -std=c++20`
   - VSCode `c_cpp_properties.json`: "configurations"
-    - "compilerPath": "/usr/local/bin/c++-10"
+    - "compilerPath": "/usr/local/bin/c++-11"
     - "cppStandard": "c++20"
     - "intelliSenseMode": "gcc-x64"
