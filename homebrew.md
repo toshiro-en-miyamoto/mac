@@ -27,3 +27,22 @@
     - "compilerPath": "/usr/local/bin/c++-11"
     - "cppStandard": "c++20"
     - "intelliSenseMode": "gcc-x64"
+- installing Go lang
+  - follow "Insall" at `github.com/syndbg/goenv`
+  - goenv from Homebrew provides with limited versions of Go
+  - hence use goenv from github
+    - ` $ git clone https://github.com/syndbg/goenv.git ~/.goenv`
+  - ~/.zshenv should look like
+    - `path=($path .... ..... .)`
+    - `export GOENV_ROOT="$HOME/.goenv"`
+    - `export PATH="$GOENV_ROOT/bin:$PATH"`
+    - `eval "$(goenv init -)"`
+    - `export PATH="$GOROOT/bin:$PATH"`
+    - `export PATH="$PATH:$GOPATH/bin"`
+  - you can install versions of Go
+    - `$ goenv install 1.11.13`
+  - set the version you want to use
+    - `$ goenv global 1.11.13`
+  - now you can use Go lang
+    - `$ go version`
+    - `go version go1.11.13 darwin/amd64`
