@@ -5,10 +5,23 @@
   * `$ git config --global user.email "name@mail.acme.com"`
   * `$ git config --global color.ui "auto"`
 * generate an SSH key if you haven't
-  * `$ ssh-keygen -t rsa -b 4096`
-  * `$ pbcopy < ~/.ssh/id_rsa.pub`
+  * `$ ssh-keygen -t ed25519 -C "name@mail.acme.com"`
+    * depress Enter for the file names
+    * depress Enter as a blank passphrase
+  * `$ ls -al ~/.ssh`
+    * `/.ssh/id_ed25519`
+    * `/.ssh/id_ed25519.pub`
+  * `touch ~/.ssh/config`, then edit it as follows
+    * Host *
+      * AddKeysToAgent yes
+      * IdentityFile ~/.ssh/id_ed25519
+  * Add your SSH private key to the ssh-agent
+    * `$ eval "$(ssh-agent -s)"`
+    * `$ ssh-add -K ~/.ssh/id_ed25519`
+    * Identity added: /Users/toshiro/.ssh/id_ed25519 (name@mail.acme.com)
+  * `$ pbcopy < ~/.ssh/id_ed25519.pub`
 * githb.com > Profile > Settings > SSH and GPG keys > New SSH key or Add SSH key
-  * Title: My MacBook Pro
+  * Title: My MacBook
   * Key: (paste the key from clipboard)
 # Creating a git Project (express)
 * initialize git for the project directory
