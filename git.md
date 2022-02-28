@@ -17,7 +17,7 @@
       * IdentityFile ~/.ssh/id_ed25519
   * Add your SSH private key to the ssh-agent
     * `$ eval "$(ssh-agent -s)"`
-    * `$ ssh-add -K ~/.ssh/id_ed25519`
+    * `$ ssh-add ~/.ssh/id_ed25519`
     * Identity added: /Users/toshiro/.ssh/id_ed25519 (name@mail.acme.com)
   * `$ pbcopy < ~/.ssh/id_ed25519.pub`
 * githb.com > Profile > Settings > SSH and GPG keys > New SSH key or Add SSH key
