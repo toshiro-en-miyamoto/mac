@@ -11,6 +11,7 @@
 - installing OpenJDK
   - `$ brew install openjdk`
   - `$ sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk`
+  - `export JAVA_HOME="$(/usr/libexec/java_home)"` in ~/.zshenv
 - installing Gnu Compiler Collection
   - make sure that Apple Command Line Tools is installed
   - `$ brew install gcc`
