@@ -2,7 +2,7 @@
 
 - install Apple Command Line Tools (a prerequisite)
 - install Homebrew
-- install and setup `git`
+- setup `git`
 
 ## Apple Command Line Tools
 
@@ -20,10 +20,10 @@
 
 ## `git`
 
-### Install `git`
+`git` comes with Apple Command Line Tools.
+You just need `pbcopy` to copy/paste.
 
 ```bash
-~$ brew install git
 ~$ brew install pbcopy
 ```
 
