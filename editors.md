@@ -10,4 +10,4 @@ My favorite editors and viewers:
   - download from Logseq site
 - JetBrains IntelliJ IDEA
   - for not only editing Markdown files but Java development
-  - download from JetBrain site
+  - download from JetBrains site
