@@ -11,3 +11,9 @@ My favorite editors and viewers:
 - JetBrains IntelliJ IDEA
   - for not only editing Markdown files but Java development
   - download from JetBrains site
+- Camunda Modeler
+  - allows to edit BPMN diagrams
+  - download from Camunda site
+- InkSpace
+  - allows to edit SVG images
+  - download from InkSpace
