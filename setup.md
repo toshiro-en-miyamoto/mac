@@ -1,8 +1,15 @@
 # Setting up Mac
 
+- Google Drive for desktop
 - install Apple Command Line Tools (a prerequisite)
 - install Homebrew
 - setup `git`
+
+## Google Drive for desktop
+
+With Drive for desktop on macOS, you can access Google Drive from macOS Finder and sync between local and Cloud files.
+
+- download [Google Drive for desktop](https://support.google.com/drive/answer/10838124?hl=en)
 
 ## Apple Command Line Tools
 
