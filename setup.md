@@ -1,9 +1,28 @@
 # Setting up Mac
 
+- customize Zsh prompt
 - Google Drive for desktop
 - install Apple Command Line Tools (a prerequisite)
 - install Homebrew
 - setup `git`
+
+## Zsh
+
+Create (or edit if already exists) `~/.zshrc`, then add the following line.
+
+```
+PROMPT='%1~ %# '
+```
+
+You can activate the setting by `% source ~/.zshrc`.
+
+| Parameter | What it Displays                          | Example Output |
+|---|-------------------------------------------|---|
+| `%n` | Current username                          | `alex` |
+| `%m` | Short hostname                            | `MacBook-Pro` |
+| `%~` | Current directory path                    | `~/Documents/Projects` |
+| `%1~` | Only the immediate current path           | `Projects` |
+| `%#` | `%` for normal user, or `#` for root | `%` |
 
 ## Google Drive for desktop
 
