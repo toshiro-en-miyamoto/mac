@@ -12,20 +12,20 @@
   * `$ git remote add origin git@github.com:toshiro-en-miyamoto/express.git`
 * commit .gitignore and README.md
 * push the commit to the remote
-  * `$ git push -u origin master`
+  * `$ git push -u origin main`
   * OR using IDE such as VScode
 # Reviewing Your Changes
 * checking the status
   * `$ git status`
   * shows changes not staged for commit
-  * shows untacked files
+  * shows untracked files
 * reviewing your changes
   * `$ git diff {<file>}`
   * shows changes in tracked files
 * reviewing commit history
   * `$ git log`
   * `$ git log --oneline`
-  * shows the commits that youo've made so far with each hash
+  * shows the commits that you've made so far with each hash
   * `$ git show <hash>`
   * shows information about the commit identified by a commit hash
   * shows changes in the commit
