@@ -23,6 +23,46 @@ export LLDB="$(brew --prefix lldb)"
 export PATH=${LLDB}/bin:$PATH
 ```
 
+### Configure `clang-tidy` bundled with `llvm`
+
+Create the configuration file `~/.clang-tidy` like this:
+
+```
+Checks: 'clang-diagnostic-*,clang-analyzer-*,cppcoreguidelines-*'
+ExtraArgs:
+  - '-std=c++23'
+  - '-fmodules'
+WarningsAsErrors: ''
+HeaderFileExtensions:
+  - ''
+  - h
+  - hh
+  - hpp
+  - hxx
+ImplementationFileExtensions:
+  - c
+  - cc
+  - cpp
+  - cxx
+  - cppm
+HeaderFilterRegex: '.*'
+ExcludeHeaderFilterRegex: ''
+FormatStyle:     none
+CheckOptions:    {}
+SystemHeaders:   false
+```
+
+The parameters added to default ones are:
+
+```
+Checks: 'clang-analyzer-*,cppcoreguidelines-*'
+ExtraArgs:
+  - '-std=c++23'
+  - '-fmodules'
+ImplementationFileExtensions:
+  - cppm
+```
+
 ### Using LLVM with Visual Studio Code
 
 For the best experience with upstream LLVM, use the official LLVM language server (`clangd`) for code completion and linting, paired with a debugger extension.
@@ -30,3 +70,8 @@ For the best experience with upstream LLVM, use the official LLVM language serve
 - Install `clangd`. Search for and install the official `clangd` extension (`llvm-vs-code-extensions.vscode-clangd`).
 - Avoid IntelliSense conflicts. If you also have Microsoft's C/C++ extension installed, disable its IntelliSense engine by setting "C_Cpp.intelliSenseEngine": "disabled" in your VS Code settings.
 - Install a debugger. Search for and install the official `lldb` extension (`llvm-vs-code-extensions.lldb-dap`).
+
+Add extra arguments for `clangd` server:
+
+- `-std=c++23`
+- `-fmodules`

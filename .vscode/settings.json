@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
+        "cppcoreguidelines",
         "CPPFLAGS",
+        "cppm",
+        "fmodules",
         "LDFLAGS",
         "LLDB",
         "lunwind"
